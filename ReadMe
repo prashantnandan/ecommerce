@@ -1,5 +1,5 @@
 To Use this project
-1) Install GIT in your system.
+1) Install GIT in your system. To install git, go to https://git-scm.com/downloads and select your OS to download. Follow the on screen instructions to install.
 2) Then at whatever location you need to copy this project in your directory, right click on GIT Bash Here.
 3) In the opened terminal use -> git init
 4) Then use -> git clone <url of this repo>
