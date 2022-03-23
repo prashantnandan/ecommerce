@@ -1,0 +1,75 @@
+
+  <mat-card-header>
+    <mat-card-title>{{title}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="mb-0 px-1">
+    <form ngClass.gt-xs="px-1" #formControl="ngForm">
+      <div fxLayout="row" fxLayoutWrap="wrap">
+        <div fxFlex="100" fxFlex.gt-md="100" ngClass.gt-md="pr-1">
+          <div fxLayoutAlign.gt-xs="space-between start" fxLayout.xs="column">
+            <mat-form-field fxFlex="100" fxFlex.gt-xs="98.50">
+              <input matInput minlength="2" maxlength="30" placeholder="Product Name" [(ngModel)]="product.productName" name="productName" type="text" #box
+              (keyup.enter)="update(box.value)"
+              (blur)="update(box.value)" required #name="ngModel">
+              <mat-error [hidden]="name.valid || name.pristine"
+              class="alert alert-danger">
+                Product Name is required
+            </mat-error>
+            </mat-form-field>
+          </div>
+          <div fxLayoutAlign.gt-xs="space-between start" fxLayout.xs="column">
+            <mat-form-field fxFlex="100" fxFlex.gt-xs="98.50">
+              <input matInput minlength="2" maxlength="30" placeholder="Product Description" [(ngModel)]="product.productDescription" name="productDescription" type="text" #box
+              (keyup.enter)="update(box.value)"
+              (blur)="update(box.value)" required #productDescription="ngModel">
+              <mat-error [hidden]="productDescription.valid || productDescription.pristine"
+              class="alert alert-danger">
+                Product Description is required
+            </mat-error>
+            </mat-form-field>
+          </div>
+         <div fxLayoutAlign.gt-xs="space-between start" fxLayout.xs="column">
+            <mat-form-field fxFlex="100" fxFlex.gt-xs="48.50">
+              <input matInput minlength="2" maxlength="30" placeholder="Quantity" type="text" [(ngModel)]="product.quantity" name="quantity" required #quantity="ngModel">
+                <mat-error [hidden]="quantity.valid || quantity.pristine"
+                  class="alert alert-danger">
+                  Quantity is required
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field fxFlex="100" fxFlex.gt-xs="48.50">
+              <input matInput minlength="2" maxlength="30" placeholder="Amount" type="text" [(ngModel)]="product.amount" name="amount" required #amount="ngModel">
+                <mat-error [hidden]="amount.valid || amount.pristine"
+                  class="alert alert-danger">
+                    Amount is required
+                </mat-error>
+            </mat-form-field>
+          </div>
+        
+          <br/>
+         <div fxLayout="row" fxLayoutWrap="wrap">
+            <div fxFlex="100" fxFlex.gt-md="100" ngClass.gt-md="pr-1">
+              <div>
+                <label class="mr-1 mat-body-3">Status:</label>
+                <mat-radio-group fxFlex="100" fxLayoutGap=".5rem" [(ngModel)]="product.status" name="status" required>
+                  <mat-radio-button value="Active">Active</mat-radio-button>
+                  <mat-radio-button value="InActive">InActive</mat-radio-button>
+                  <mat-radio-button value="Other">Other</mat-radio-button>
+                </mat-radio-group>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+      <br/>
+      <div class="ptb-5 mb-1">
+        <button mat-raised-button color="primary" [type]="submit" [disabled]="!formControl.valid" [mat-dialog-close]="true" class="mr-1"  (click)="confirmAdd()">Submit</button>
+        <button mat-raised-button color="accent" (click)="onNoClick()" tabindex="" x="-1">Cancel</button>
+      </div>
+    </form>
+    <!-- {{userName}} -->
+  </mat-card-content>
+  <!-- </mat-card> -->
+  <!-- </div>
+    </div> -->

@@ -1,0 +1,299 @@
+E store flow
+
+E commerce-
+   it is the platform where buyer meet seller
+
+2,3,5,8,13,21   story point
+
+Sprint planning meeting- easy-2 or 3
+                          medium- 5
+                          more difficult- 8, 13
+
+priority- low , medium and high
+
+UC- user criteria
+
+AC- 01- Acceptance Criteria
+
+every user story have multiple accetance criteria-
+
+every task or user story has multiple sub task
+
+
+task status- open    closed       in Progress
+
+Add Product details-
+
+analysis---  15%
+
+2nd day--------35
+
+3rd day-------80
+
+4th day------100% its almost done
+
+how to update your daily status---- meeting
+
+@Ram patil  Questions
+
+@Shyam Deshmukh-answer.
+
+Requirement------User story-----Agile Process------JIRA-
+
+Scrum master----to assign the story to team members-
+
+user-----RestController layer---Service Layer---DAO Layer-------Database layer
+
+buyer(me) means- to buy the product from site---
+
+Seller- to sell the product
+
+
+Product order-------------Processed-----------------------Delivery()
+
+how to create the spring boot project
+
+DAO layer or Repository layer
+
+Rest API, Restful , web service, api layer
+
+pojo or model class-
+
+service and service implementation- design the interface and its implemetation
+
+repository or dao layer- findAll,Save, findById, Delete
+
+ProductController-- we need to inject the service
+
+ServiceImplemetation- we need to inject the repo object
+
+
+int m1(int a){
+
+}
+
+---------------------------------------------
+How to starts for writing Rest API into Industry
+
+
+Product-------pojo class
+Design the interface and its implementation
+Repository
+RestController class
+
+-------------------------How to test the API---------------------------
+
+Interface-
+
+every class is implemented by some interfaces------POJO class serializable
+
+@GetMapping- postman-Get()
+@PostMapping-postman-Post()
+
+---------------------------------------------------------
+How to debug the code
+
+postman hit request by url---------
+
+Controller---------Service and service implementation----DAO layer- db
+
+1. go to specific controller class----
+2. apply the debug point
+3. Go to spring boot main file where your main method is-
+   Debug as Spring Boot Application
+4. Enter the url----and hit the send button
+
+-----------------------------------------------------------------
+
+Camera-----return the camera object
+
+laptop-----return laptop object
+
+mobile-----return mobile object
+
+-------------------------------Git- BitBucket--------------------
+git status  and press enter button--------
+
+no of files----
+login.java
+register.java
+product.java
+
+----------------------push-----------------------
+
+git add product.java and press enter button
+
+git commit -m "Added the new field as product desciption" and press enter button
+
+git push and press enter button-----------------(Remote)
+
+------------------pull ----------------------------
+
+git pull and press the enter button
+
+local machine
+
+--------------------Different server-------------------------------------------
+
+Dev Server- TL------code deploy-------share the url- tested by developer
+
+Test server-----TL---code deploy-------share url with QA team----tested by tester.
+
+UAT-------User Acceptance Test-----------------tester to test 
+
+Production---Live Server------Test- 
+
+-------------------How to handle the transection management----------------------
+
+
+Product order
+
+
+User details----db----exception
+Product details---db
+
+at service impl layer- @Transectional
+
+main method @EnableTransectionManagemnt
+------------------------How to configure the logger in the project---------------
+
+logger- it is used to keep track of application information
+
+why logger?
+
+code-------------------------deploy------------production-error
+
+application.properties file------logger configuration code---
+
+---------------------------------------------------------------------
+E-Store Release Notes---- release mean whatver work we have done that needs to delivered
+                          to client
+
+---------------------------------------------------------------------------
+
+Spring boot-------------------war file-------------------------
+
+
+Angular                   dist file -----by using prod command
+
+
+Tomcat server---------------------Deploy the code   
+
+-------------------------------------------------------------------------
+Daily Status----------------in the daily stand up meeting or JIRA-% 
+
+-daily send mail to manager--------------------
+
+yes
+
+-To
+subject-Daily status
+
+message
+
+
+Design Restful API for adding product details.
+Added the new field product description on product page
+Added the field on db for product table
+
+---------------------------------table structure for one to one mapping----------
+customer table
+id(pk)
+name
+city
+email
+trasectionid(fk)
+
+transection table
+tranesectionid(pk)
+amt
+total
+
+-----------------how you implemented one to one mapping in your project
+one customer has one transection, which is related to ecommerce-
+POJO class design only
+
+
+---------------one user has many product-------------------------------
+
+many to many 
+
+one cart has many product and one product has many cart
+---------------------------------------------------------------------
+end to end flow of application-
+
+HTML----TS-----Service_Angular(API calling)-----Rest.ts file---Java Backend(
+RestController-------------Service---------DAO---------Database.
+
+----------------total team size (Project manager, Scrum Master)
+
+10
+total no of java developer-4
+total no of front developer-2
+TL-1
+tester-2
+BA-1
+
+------------------Daily schedule---------------------------------
+9.30- daily stand up meeting.
+
+10
+
+EOD-----End of Day----6 pm- manager daily status send
+
+microsoft team-----------------Sprint planning, daily stand up meeting
+
+
+mail-------------------outlook
+
+CEO/Founder
+
+VP Head
+
+Vice President
+
+Director
+
+Delivery Manager (DM)
+
+Project Manager(PM)   /Project Architect   
+
+Scrum Master
+
+Team Lead (TL)
+
+Senior software engineer(SSE)
+
+Jr.Software Engineer
+
+Software engineer(fresher)
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
