@@ -1,0 +1,6 @@
+To Use this project
+1) Install GIT in your system.
+2) Then at whatever location you need to copy this project in your directory, right click on GIT Bash Here.
+3) In the opened terminal use -> git init
+4) Then use -> git clone <url of this repo>
+5) You are ready to use project. Enjoy!!
